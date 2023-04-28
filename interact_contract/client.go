@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"log"
 
-	// "math"
+	// "math"https://goethereumbook.org/smart-contract-read-erc20/
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -37,6 +37,7 @@ func main() {
 	fmt.Println(ToDecimal(balance, 18))
 
 	// connect to token contract
+	// https://goethereumbook.org/smart-contract-read-erc20
 	token_address := common.HexToAddress(TOKEN_ADDRESS)
 	instance, err := token.NewToken(token_address, client)
 	if err != nil {
