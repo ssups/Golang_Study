@@ -37,7 +37,7 @@ func main() {
 	}
 
 	// connect client
-	client, err := ethclient.Dial("http://hq.gnd.devnet.kstadium.io:8545")
+	client, err := ethclient.Dial("http://127.0.0.1:8545")
 	if err != nil {
 		log.Fatal(err)
 	}
